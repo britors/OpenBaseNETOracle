@@ -4,7 +4,8 @@ OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados
 O template foi construído devido a necessidade de criar projetos  forma rápida e prática. <br/>
 Para criar um projeto, basta seguir os passos abaixo: <br/>
 1) Crie seu projeto usando o template OpenBaseNET <br/>
-![image](https://github.com/britors/OpenBaseNET.SqlServer/assets/183213/f9baefe2-7875-429c-9a4e-6f17a755717a)
+![image](https://github.com/britors/OpenBaseNETOracle/assets/183213/1503d4b0-d7d9-4e25-a3ae-ec93c74a421e)
+
 
 2) Baixe seu projeto para sua máquina <br/>
 ### Exemplo
@@ -16,8 +17,8 @@ git clone <projeto>
 ```json
 {
   "ConnectionStrings": {
-    "OneBaseSQLServer": "Server=.;Database=OpenBaseNET;Integrated Security=True;TrustServerCertificate=True;",
-    "OneBaseMongoDb": "mongodb://localhost:27017/logs"
+    "OneBaseOracle": "Data Source=localhost:1521/FREE; User Id=ONEBASENET;Password=ONEBASENET;",
+    "OneBaseMongoDb": "mongodb://localhost:27017/logs-oracle"
   },
   "Logging": {
     "LogLevel": {
@@ -50,7 +51,7 @@ internal sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 {
     public void Configure(EntityTypeBuilder<Customer> builder)
     {
-        builder.ToTable("CLITAB");
+        builder.ToTable("CLITAB", "ONEBASENET");
 
         builder.HasKey(c => c.Id)
             .HasName("PK_CLITAB");
