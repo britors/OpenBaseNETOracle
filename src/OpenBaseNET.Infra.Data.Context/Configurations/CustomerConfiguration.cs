@@ -8,7 +8,7 @@ internal sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 {
     public void Configure(EntityTypeBuilder<Customer> builder)
     {
-        builder.ToTable("CLITAB", "ONEBASENET");
+        builder.ToTable("CLITAB", "OPENBASENET");
 
         builder.HasKey(c => c.Id)
             .HasName("PK_CLITAB");

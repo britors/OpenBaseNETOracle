@@ -14,7 +14,7 @@ internal static class DatabaseContainer
     internal static void RegisterServices(IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<DbConnection>(_ =>
-            new OracleConnection(configuration.GetConnectionString(OneBaseConnectionStrings.OneBaseOracle)));
+            new OracleConnection(configuration.GetConnectionString(OneBaseConnectionStrings.OpenBaseOracle)));
         services.AddScoped<DbSession>();
         services.AddScoped<OneBaseDataBaseContext>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();

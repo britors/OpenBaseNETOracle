@@ -3,7 +3,7 @@
 OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados Oracle <br/>
 O template foi construído devido a necessidade de criar projetos  forma rápida e prática. <br/>
 Para criar um projeto, basta seguir os passos abaixo: <br/>
-1) Crie seu projeto usando o template OpenBaseNET <br/>
+1) Crie seu projeto usando o template OpenBaseNETOracle <br/>
 ![image](https://github.com/britors/OpenBaseNETOracle/assets/183213/1503d4b0-d7d9-4e25-a3ae-ec93c74a421e)
 
 
@@ -17,8 +17,8 @@ git clone <projeto>
 ```json
 {
   "ConnectionStrings": {
-    "OneBaseOracle": "Data Source=localhost:1521/FREE; User Id=ONEBASENET;Password=ONEBASENET;",
-    "OneBaseMongoDb": "mongodb://localhost:27017/logs-oracle"
+    "OpenBaseOracle": "Data Source=localhost:1521/FREE; User Id=OPENBASENET;Password=OPENBASENET;",
+    "OpenBaseMongoDb": "mongodb://localhost:27017/logs-oracle"
   },
   "Logging": {
     "LogLevel": {
@@ -51,7 +51,7 @@ internal sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 {
     public void Configure(EntityTypeBuilder<Customer> builder)
     {
-        builder.ToTable("CLITAB", "ONEBASENET");
+        builder.ToTable("CLITAB", "OPENBASENET");
 
         builder.HasKey(c => c.Id)
             .HasName("PK_CLITAB");
@@ -73,7 +73,6 @@ internal sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     }
 }
 ```
+# Pronto!
 A partir de agora você pode criar suas classes de serviço, repositório e controlador para sua entidade <br/>
-Caso você siga o padrão de nomenclatura do template, você não precisará fazer nenhuma configuração adicional <br/>
-
-
+Caso você siga o padrão de nomenclatura do template não precisará fazer nenhuma configuração adicional <br/>

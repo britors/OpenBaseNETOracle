@@ -6,7 +6,7 @@ using OpenBaseNET.Infra.Settings.ConnectionStrings;
 
 namespace OpenBaseNET.Infra.Data.Context;
 
-public class OneBaseDataBaseContext(DbSession session, IConfiguration configuration) : DbContext
+public class OneBaseDataBaseContext(IConfiguration configuration) : DbContext
 {
     public virtual required DbSet<Customer> Customers { get; set; }
 
@@ -14,7 +14,7 @@ public class OneBaseDataBaseContext(DbSession session, IConfiguration configurat
     {
         if (!optionsBuilder.IsConfigured)
             optionsBuilder.UseOracle(
-                configuration.GetConnectionString(OneBaseConnectionStrings.OneBaseOracle));
+                configuration.GetConnectionString(OneBaseConnectionStrings.OpenBaseOracle));
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
