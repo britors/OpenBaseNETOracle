@@ -1,5 +1,9 @@
 # OpenBaseNET para Oracle
 ![image](https://github.com/britors/OpenBase.NET/assets/183213/9d3f3601-d627-4225-b64f-1f4fd0a3f817)
+![Oracle-Emblem](https://github.com/britors/OpenBaseNETOracle/assets/183213/12a1a0b4-75eb-4226-91e8-5c5260ed7c96)
+
+
+
 OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados Oracle <br/>
 O template foi construído devido a necessidade de criar projetos  forma rápida e prática. <br/>
 Para criar um projeto, basta seguir os passos abaixo: <br/>
