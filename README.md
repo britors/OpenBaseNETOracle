@@ -1,6 +1,6 @@
 # OpenBaseNET para Oracle
 ![image](https://github.com/britors/OpenBase.NET/assets/183213/9d3f3601-d627-4225-b64f-1f4fd0a3f817)
-![Oracle-Emblem](https://github.com/britors/OpenBaseNETOracle/assets/183213/12a1a0b4-75eb-4226-91e8-5c5260ed7c96)
+
 
 
 
