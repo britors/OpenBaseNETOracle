@@ -1,5 +1,24 @@
 # OpenBaseNET para Oracle
+
+![GitHub repo size](https://img.shields.io/github/repo-size/britors/OpenBaseNETOracle)
+![GitHub top language](https://img.shields.io/github/languages/top/britors/OpenBaseNETOracle)
+![GitHub language count](https://img.shields.io/github/languages/count/britors/OpenBaseNETOracle)
+![GitHub last commit](https://img.shields.io/github/last-commit/britors/OpenBaseNETOracle)
+![GitHub issues](https://img.shields.io/github/issues/britors/OpenBaseNETOracle)
+![GitHub](https://img.shields.io/github/license/britors/OpenBaseNETOracle)
+![GitHub forks](https://img.shields.io/github/forks/britors/OpenBaseNETOracle?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/britors/OpenBaseNETOracle?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/britors/OpenBaseNETOracle?style=social)
+![GitHub followers](https://img.shields.io/github/followers/britors?style=social)
+
+
 ![file-sNxWguRlgRD15B33cvlk9sHq](https://github.com/britors/OpenBaseNETOracle/assets/183213/449f9dbe-8a57-4be0-a010-85bc26ef36a8)
+
+
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+
 
 > OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados Oracle
 O template foi construído devido a necessidade de criar projetos  forma rápida e prática.
