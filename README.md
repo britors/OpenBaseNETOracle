@@ -4,19 +4,18 @@
 > OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados Oracle
 O template foi construído devido a necessidade de criar projetos  forma rápida e prática.
 
-<p>Para criar um projeto, basta seguir os passos abaixo: </p>
+## Para criar um projeto, basta seguir os passos abaixo:
 
-### Crie seu projeto usando o template OpenBaseNETOracle
+#### Crie seu projeto usando o template OpenBaseNETOracle
 ![image](https://github.com/britors/OpenBaseNETOracle/assets/183213/1503d4b0-d7d9-4e25-a3ae-ec93c74a421e)
 
 
-### Baixe seu projeto para sua máquina <br/>
-#### Exemplo
+#### Baixe seu projeto para sua máquina
 ```bash
 git clone <projeto>
 ```
-### Agora, dentro da Pasta _01-Presentation_, acesse o arquivo _appsettings.json_ e altere a string de conexão para a sua base de dados e para o banco mongodb para logs
-#### Exemplo de appsettings
+#### Agora, dentro da Pasta _01-Presentation_, acesse o arquivo _appsettings.json_ e altere a string de conexão para a sua base de dados e para o banco mongodb para logs
+
 ```json
 {
   "ConnectionStrings": {
@@ -32,9 +31,8 @@ git clone <projeto>
   "AllowedHosts": "*"
 }
 ```
-### No projeto OpenBaseNET.Application acesse a pasta Entities e crie suas classes para representar as suas entidades (existe um modelo chamado Customer, use como exemplo)
+#### No projeto OpenBaseNET.Application acesse a pasta Entities e crie suas classes para representar as suas entidades (existe um modelo chamado Customer, use como exemplo)
    É extemamente importante que a classe implemente a interface _IEntityOrQueryResult_ </p>
-#### Exemplo de classe para representar uma entidade
 ```csharp
 namespace OpenBaseNET.Domain.Entities;
 
@@ -45,8 +43,7 @@ public sealed class Customer : IEntityOrQueryResult
  
 }
 ```
-### No Projeto OpenBaseNET.Infra.Data.Context acesse a pasta Configurations e crie a classe de mapeamento da sua entidade (existe um modelo chamado CustomerMapping, use como exemplo)
-#### Exemplo de classe para mapear uma entidade
+#### No Projeto OpenBaseNET.Infra.Data.Context acesse a pasta Configurations e crie a classe de mapeamento da sua entidade (existe um modelo chamado CustomerMapping, use como exemplo)
 ```csharp
 namespace OpenBaseNET.Infra.Data.Context.Configurations;
 
