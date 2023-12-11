@@ -39,7 +39,6 @@ public abstract class RepositoryBase<TEntity>
             pageNumber,
             pageSize,
             includes);
-        logger.LogInformation($"Resultado da busca por {typeof(TEntity).Name} com os seguintes filtros: {predicate} e includes {JsonSerializer.Serialize(includes)} foi {JsonSerializer.Serialize(result)}");
         return result;
     }
 
@@ -101,8 +100,6 @@ public abstract class RepositoryBase<TEntity>
             parameters: param,
             commandType: CommandType.Text,
             transaction: dbSession.Transaction);
-
-        logger.LogInformation($"Resultado da execução da query {query} foi {JsonSerializer.Serialize(result)}");
         return result;
     }
 

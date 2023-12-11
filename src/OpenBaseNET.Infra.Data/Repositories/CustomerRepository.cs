@@ -12,7 +12,8 @@ public sealed class CustomerRepository(
     OneBaseDataBaseContext context)
     : RepositoryBase<Customer>(dbSession, logger, context), ICustomerRepository, IDataRepository
 {
-    public async Task<IEnumerable<CustomerQueryResult>> FindByNameAsync(string name, int pageNumber, int pageSize, CancellationToken cancellationToken)
+    public async Task<IEnumerable<CustomerQueryResult>> 
+        FindByNameAsync(string name, int pageNumber, int pageSize, CancellationToken cancellationToken)
     { 
         var query = $"""
                       SELECT
@@ -25,6 +26,7 @@ public sealed class CustomerRepository(
                       FETCH NEXT {pageSize} ROWS ONLY
                      """;
         
-        return await QueryAsync<CustomerQueryResult> (query, cancellationToken) ?? throw new InvalidOperationException();
+        return await QueryAsync<CustomerQueryResult> (query, cancellationToken) ?? 
+               throw new InvalidOperationException();
     }
 }
