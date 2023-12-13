@@ -10,4 +10,6 @@ public interface ICustomerRepository : IRepositoryBase<Customer>
         int pageNumber,
         int pageSize,
         CancellationToken cancellationToken);
+
+    Task<CountQueryResult> CustomerCoutAsync(string name, CancellationToken cancellationToken);
 }

@@ -29,4 +29,10 @@ public sealed class CustomerRepository(
         return await QueryAsync<CustomerQueryResult> (query, cancellationToken) ?? 
                throw new InvalidOperationException();
     }
+
+    public async Task<CountQueryResult> CustomerCoutAsync(string name, CancellationToken cancellationToken)
+    {
+        var queryCount = $"SELECT COUNT(1) AS TOTAL FROM CLITAB WHERE UPPER(CLINM) LIKE '%{name.ToUpper()}%'";
+        return await QueryFirstOrDefaultAsync<CountQueryResult>(queryCount, cancellationToken);
+    }
 }
