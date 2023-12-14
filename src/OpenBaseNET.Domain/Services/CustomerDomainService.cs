@@ -44,6 +44,7 @@ public sealed class CustomerDomainService
                 cancellationToken
             );
 
-        return new PaginatedQueryResult<CustomerQueryResult>(page, pageSize, countResult.Total, resultPaginated);
+        return new PaginatedQueryResult<CustomerQueryResult>(page, 
+            pageSize, countResult.Total, resultPaginated);
     }
 }
