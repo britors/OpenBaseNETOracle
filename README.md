@@ -17,7 +17,7 @@
 
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
 
 
 > OpenBaseNET para Oracle é um template para projetos .net 8 usando base de dados Oracle.
@@ -33,13 +33,12 @@ O template foi construído devido a necessidade de criar projetos  forma rápida
 ```bash
 git clone <projeto>
 ```
-#### Agora, dentro da Pasta _01-Presentation_, acesse o arquivo _appsettings.json_ e altere a string de conexão para a sua base de dados e para o banco mongodb para logs
+#### Agora, dentro da Pasta _01-Presentation_, acesse o arquivo _appsettings.json_ e altere a string de conexão para a sua base de dados
 
 ```json
 {
   "ConnectionStrings": {
-    "OpenBaseOracle": "Data Source=localhost:1521/FREE; User Id=OPENBASENET;Password=OPENBASENET;",
-    "OpenBaseMongoDb": "mongodb://localhost:27017/logs-oracle"
+    "OpenBaseOracle": "Data Source=localhost:1521/FREE; User Id=OPENBASENET;Password=OPENBASENET;"
   },
   "Logging": {
     "LogLevel": {
