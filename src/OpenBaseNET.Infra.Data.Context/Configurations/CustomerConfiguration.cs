@@ -10,8 +10,7 @@ internal sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {
         builder.ToTable("CLITAB", "RODRIGO");
 
-        builder.HasKey(c => c.Id)
-            .HasName("PK_CLITAB");
+        builder.HasKey(c => c.Id);
 
         builder
             .Property(c => c.Id)
