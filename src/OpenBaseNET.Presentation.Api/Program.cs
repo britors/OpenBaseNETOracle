@@ -5,7 +5,7 @@ using System.Reflection;
 var ascii = Figgle.FiggleFonts.Standard.Render("OpenBaseNET");
 Console.WriteLine(ascii);
 Console.WriteLine("Starting application...");
-Console.WriteLine("Oracle Database Flavor...");
+Console.WriteLine("Oracle Database Flavour ...");
 Console.WriteLine($"Version {Assembly.GetEntryAssembly()?.GetName().Version}");
 
 var builder = WebApplication.CreateBuilder(args);
