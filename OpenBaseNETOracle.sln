@@ -79,7 +79,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenBaseNET.Infra.Resilienc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenBaseNET.Infra.Dapper.Extension", "src\OpenBaseNET.Infra.Dapper.Extension\OpenBaseNET.Infra.Dapper.Extension.csproj", "{8FD7595A-FA2C-4608-9837-30622CF46D72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBaseNET.Infra.Data.Context", "src\OpenBaseNET.Infra.Data.Context\OpenBaseNET.Infra.Data.Context.csproj", "{2F10D9B2-8A7B-4142-A042-579C383416EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenBaseNET.Infra.Data.Context", "src\OpenBaseNET.Infra.Data.Context\OpenBaseNET.Infra.Data.Context.csproj", "{2F10D9B2-8A7B-4142-A042-579C383416EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
